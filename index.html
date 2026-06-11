@@ -1,12 +1,210 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="サンプルゼミの公式紹介ページ">
     <title>HOME | 遊びの探求ゼミ</title>
     <link rel="stylesheet" href="CSS/style.css">
-  </head>
-  <body>
-    <iframe href="n/h.html"></iframe>
-  </body>
+    
+    <!-- Google Fontsの例（必要に応じてstyle.cssで使用可能） -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&amp;family=Noto+Serif+JP:wght@400;700&display=swap">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <!-- ロゴ -->
+                <div class="logo">
+                    <h1><a href="index.html">遊びの探求ゼミ</a></h1>
+                </div>
+                
+                <!-- ナビゲーション -->
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#about">ゼミについて</a></li>
+                        <li><a href="#research">研究テーマ</a></li>
+                        <li><a href="#members">プロジェクトメンバー</a></li>
+                        <li><a href="#activities">活動内容</a></li>
+                        <li><a href="#schedule">スケジュール</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- モバイルメニュー用ハンバーガー（JS不要でCSSで対応可能） -->
+                <button class="menu-toggle" aria-label="メニューを開く">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>未来を切り拓く<span>サンプルゼミ</span></h2>
+                <p class="lead">先進的な研究を通じて、理論と実践を融合させる学びの場</p>
+                <a href="#about" class="btn-primary">ゼミを知る</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ゼミについて -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">ゼミについて</h2>
+            <div class="grid-2">
+                <div class="about-text">
+                    <p>サンプルゼミは、〇〇大学〇〇学部で活動する研究ゼミです。主に〇〇分野における理論的・実践的な研究を行っています。</p>
+                    <p>教員・学生が一体となって、最新のトピックに取り組み、学会発表や共同研究を積極的に行っています。</p>
+                    <ul class="features">
+                        <li>少人数制で</li>
+                        <li>学際的なアプローチ</li>
+                        <li>産学連携プロジェクト多数</li>
+                        <li>国際的な視野の獲得</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <!-- 画像は後で差し替え -->
+                    <img src="https://picsum.photos/id/1015/600/400" alt="ゼミの様子" width="600" height="400">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 研究テーマ -->
+    <section id="research" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">主な研究テーマ</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>テーマ1</h3>
+                    <p>AI・機械学習を活用した〇〇システムの構築と評価</p>
+                </div>
+                <div class="card">
+                    <h3>テーマ2</h3>
+                    <p>データサイエンスによる社会課題解決</p>
+                </div>
+                <div class="card">
+                    <h3>テーマ3</h3>
+                    <p>持続可能な開発と〇〇技術の融合</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- メンバー -->
+    <section id="members" class="section">
+        <div class="container">
+            <h2 class="section-title">メンバー</h2>
+            
+            <!-- 教員 -->
+            <h3 class="sub-title">教員</h3>
+            <div class="member-grid">
+                <div class="member-card">
+                    <img src="https://picsum.photos/id/64/300/300" alt="教員名">
+                    <h4>教授 松丸慶汰</h4>
+                    <p>担当教科：英語</p>
+                </div>
+            </div>
+            
+            <!-- 学生 -->
+            <h3 class="sub-title">在籍学生</h3>
+            <div class="grid-4">
+                <div class="member-card">
+                    <img src="https://picsum.photos/id/65/300/300" alt="学生1">
+                    <h4>修士2年 田中 太郎</h4>
+                </div>
+                <div class="member-card">
+                    <img src="https://picsum.photos/id/66/300/300" alt="学生2">
+                    <h4>学部4年 鈴木 花子</h4>
+                </div>
+                <!-- 必要に応じて追加 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 活動内容 -->
+    <section id="activities" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">活動内容</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>週次ゼミ</h4>
+                    <p>毎週〇曜日 〇時〜</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>研究発表会</h4>
+                    <p>月1回実施</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>合宿・ワークショップ</h4>
+                    <p>年2回</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- スケジュール -->
+    <section id="schedule" class="section">
+        <div class="container">
+            <h2 class="section-title">2026年度スケジュール</h2>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>月</th>
+                        <th>内容</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>4月</td>
+                        <td>新ゼミ生歓迎会・オリエンテーション</td>
+                    </tr>
+                    <tr>
+                        <td>6月</td>
+                        <td>中間発表会</td>
+                    </tr>
+                    <tr>
+                        <td>9月</td>
+                        <td>夏合宿</td>
+                    </tr>
+                    <!-- 必要に応じて追加 -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- お問い合わせ / CTA -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">お問い合わせ</h2>
+            <p class="contact-text">サンプルゼミへの入ゼミ希望・質問等はこちらまでお気軽にご連絡ください。</p>
+            <a href="mailto:example@sample-univ.ac.jp" class="btn-primary">メールで問い合わせる</a>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div>
+                    <p>&copy; 2026 サンプルゼミ All Rights Reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">プライバシーポリシー</a>
+                    <a href="#">アクセス</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- シンプルなJavaScript（モバイルメニュー用） -->
+    <script>
+        // 必要最小限のJS（CSSで対応できる部分はCSS推奨）
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('active');
+        });
+    </script>
+</body>
 </html>
