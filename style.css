@@ -7,6 +7,6 @@ body{
   background:linear-gradient(to right,#0c0024,#2f018a);
   color:#ffffff;
 }
-body:not(nav){
+body > :not(nav){
   padding-left:0 5%;
 }
